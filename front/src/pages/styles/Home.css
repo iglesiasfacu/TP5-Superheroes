@@ -1,0 +1,30 @@
+.container-card-personajes{
+    margin: 40px auto;
+    display: grid;
+    width: 930px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 300px);
+}
+
+.container-busqueda{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color: #4E9F3D;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 20px black;
+}
+
+.container-busqueda input{
+    height: 35px;
+    width: 350px;
+    border-radius: 5px ;
+    border: 0;
+    outline: 0;
+    padding-left:  5px;
+    box-shadow: 0px 4px 20px black;
+}

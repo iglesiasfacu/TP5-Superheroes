@@ -1,0 +1,45 @@
+.container-detalle{
+    width: 300px;
+    height: 280px;
+    margin-top: 20px;
+    background-color: #4E9F3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px black;
+    text-decoration:  none;
+    color: #fff;
+}
+.container-img img{
+    width: 300px;
+    height: 150px;
+    margin-top: -20px;
+    object-fit: cover;
+    background-color: #1E5128;
+}
+
+.container-informacion {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-informacion p{
+    text-overflow: ellipsis;
+    margin-top: -10px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: rgba(277, 277, 277, 0.7)
+}
+
+.container-detalles{
+    margin-top: -20px;
+}
+
+.container-detalle h2{
+    text-align: center;
+    margin-top: 25px;
+}

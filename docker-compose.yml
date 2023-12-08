@@ -1,0 +1,32 @@
+version: "3"
+services:
+  backend:
+    build: ./back
+    container_name: "superheroes_back"
+    command: sh -c 'npm install; npm start'
+    ports:
+      - "3003:3003"
+    volumes:
+      - ./back:/back
+    depends_on:
+      - "database"
+
+  database:
+    container_name: "superheroes_db"
+    image: mongo:4.4.6
+    ports:
+      - "27017:27017"
+
+  frontend:
+    build: ./front
+    container_name: "superheroes_front"
+    command: sh -c 'npm install; npm start'
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front:/front
+    depends_on:
+      - "backend"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
